@@ -1,0 +1,12 @@
+{
+  "name": "Todos",
+  "short_name": "Todos",
+  "description": "Personal to-do list",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F2F2F7",
+  "theme_color": "#007AFF",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
