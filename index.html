@@ -120,11 +120,14 @@
     .todo-card.done { opacity: .45; }
 
     .check-ring {
-      width: 24px; height: 24px; border-radius: 50%; flex-shrink: 0;
-      border: 2px solid var(--sep); margin-top: 1px;
+      width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+      border: 2px solid var(--sep); margin-top: 0;
       display: flex; align-items: center; justify-content: center;
-      font-size: 13px; font-weight: 700; color: transparent;
+      font-size: 14px; font-weight: 700; color: transparent;
       transition: all .2s; cursor: pointer;
+      /* Larger tap target on touch */
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
     }
     .todo-card.done .check-ring {
       background: var(--success); border-color: var(--success); color: #fff;
